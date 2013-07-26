@@ -1,0 +1,6 @@
+/examples/servlets/servlet/HelloWorldExample
+/examples/servlets/servlet/RequestInfoExample
+/examples/servlets/servlet/RequestHeaderExample
+/examples/servletsservlet/ThisRaises404Error
+/examples/servlets/servlet/CookieExample
+/examples/servlets/servlet/SessionExample
