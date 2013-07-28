@@ -29,8 +29,8 @@ httpUtilities = HTTPPluginControl.getHTTPUtilities()
 class TestRunner:
     def __call__(self):
         # for-loop through the lines in the file
-        for line in Urls.getShullfed(grinder.processNumber, grinder.threadNumber):
-            dat = Urls.item(line)
+        for line in Urls.getShuffled( grinder.processNumber, grinder.threadNumber ):
+            dat = Urls.item( line )
             testId = dat[ 'testId' ]
             resourcePath = dat[ 'resourcePath' ]
             fullurl =  properties.baseUrl + resourcePath
@@ -41,7 +41,7 @@ class TestRunner:
                 # Define HTTP request
                 httpReq = HTTPRequest( url=properties.baseUrl, headers=connection.headers )
                 # Wrap request object with a Test object
-                request = Test( testId, desc ).wrap(httpReq)
+                request = Test( testId, desc ).wrap( httpReq )
                 # Call GET method, run test 
                 response = request.GET( fullurl )
                 statistics = grinder.statistics.forLastTest

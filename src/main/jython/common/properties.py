@@ -15,7 +15,7 @@ print ("baseUrl=%s" % baseUrl)
 baseSSLUrl = os.getenv( 'baseSSLUrl', "https://localhost:8080" )
 print ("baseSSLUrl=%s" % baseSSLUrl)
 #
-sampleRate = int(os.getenv( 'sampleRate', "50" ))
+sampleRate = int(os.getenv( 'sampleRate', "100" ))
 print ("sampleRate=%d" % sampleRate)
 #
 rampUpInterval = int(os.getenv( 'rampUpInterval', "30" ))

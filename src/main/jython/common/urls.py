@@ -23,7 +23,7 @@ for line in lines :
     index += 1
     seq +=1
 
-def getShullfed( threadNumber, processNumber):
+def getShuffled( threadNumber, processNumber):
     global lines
     # each thread needs a local copy of the lines global list
     linesLocal = copy.copy( lines )      
