@@ -39,5 +39,9 @@ def get():
 
 def item( line ):
     lineSplit = line.split(":",1)
-    return {'testId':int(lineSplit[0]), 'resourcePath':lineSplit[1]}
+    return {'testId':int(lineSplit[0]), 'resourcePath':lineSplit[1], 'description':description( lineSplit[1] )}
+
+def description( resourcePath ):
+    desc = resourcePath.replace( '/', '-', 1 )
+    return desc
 #

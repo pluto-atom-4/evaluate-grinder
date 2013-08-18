@@ -33,8 +33,8 @@ class TestRunner:
             dat = Urls.item( line )
             testId = dat[ 'testId' ]
             resourcePath = dat[ 'resourcePath' ]
+            desc =  dat[ 'description' ]
             fullurl =  properties.baseUrl + resourcePath
-            desc = fullurl.replace( 'http://', '', 1 ) 
             try: 
                 # Delay the statics return by 1 second to check for success
                 grinder.statistics.delayReports = 1
